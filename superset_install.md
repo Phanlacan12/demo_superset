@@ -53,11 +53,11 @@
 
 8. **Kết nối vào database**: Khi ta chạy Superset bằng Docker hoặc Docker Compose, Superset sẽ chạy bên trong container Docker riêng của nó, giống như thể Superset đang chạy trên một máy riêng biệt. Vì vậy, khi ta cố gắng kết nối với database local bằng hostname localhost, nó sẽ không hoạt động vì localhost trong trường hợp này chỉ đến container Docker mà Superset đang chạy, chứ không phải là máy chủ thực tế của bạn.
 
-### Bước 1: Cấu hình MySQL để chấp nhận kết nối từ bên ngoài
+##### Bước 1: Cấu hình MySQL để chấp nhận kết nối từ bên ngoài
    - Chỉnh sửa `my.cnf` để `bind-address` là `0.0.0.0`.
    - Cấp quyền truy cập từ xa cho người dùng MySQL.
    - Khởi động lại MySQL.
-## Bước 2: Kết nối từ Superset
+#### Bước 2: Kết nối từ Superset
 
 Truy cập vào container Superset:
    - Mở một terminal mới và truy cập vào container Superset:
@@ -96,24 +96,24 @@ Kiểm tra kết nối:
 
 9. **Tạo user và phân quyền**: Trong Apache Superset, quyền (permissions) được quản lý thông qua các vai trò (roles). Mỗi vai trò có thể có một hoặc nhiều quyền, và người dùng có thể được gán một hoặc nhiều vai trò. Dưới đây là một số vai trò và quyền chính trong Superset:
 
-### Các Vai Trò Chính
+##### Các Vai Trò Chính
 
-#### Admin:
+###### Admin:
 - Quản lý toàn bộ hệ thống Superset.
 - Có tất cả các quyền, bao gồm quản lý người dùng, cơ sở dữ liệu, và cấu hình hệ thống.
 
-#### Alpha:
+###### Alpha:
 - Quản lý hầu hết các tính năng, ngoại trừ một số quyền quản trị hệ thống.
 - Có thể tạo và chỉnh sửa dashboards, charts, và datasets.
 
-#### Gamma:
+###### Gamma:
 - Quyền đọc-only trên hầu hết các đối tượng.
 - Có thể xem dashboards và charts, nhưng không thể chỉnh sửa chúng.
 
-#### Public:
+###### Public:
 - Quyền rất hạn chế, chủ yếu cho phép xem một số nội dung công khai mà không cần đăng nhập.
 
-### Các Quyền Cơ Bản
+##### Các Quyền Cơ Bản
 - **Can Dashboard on Superset**: Quyền truy cập vào các dashboard.
 - **Can Slice on Superset**: Quyền truy cập vào các biểu đồ (charts).
 - **Can Explore on Superset**: Quyền truy cập vào giao diện khám phá dữ liệu.
@@ -125,19 +125,19 @@ Kiểm tra kết nối:
 - **Datasource Access on [datasource]**: Quyền truy cập vào một nguồn dữ liệu cụ thể.
 - **Schema Access on [schema]**: Quyền truy cập vào một schema cụ thể trong cơ sở dữ liệu.
 
-### Cách Quản Lý Quyền và Vai Trò
+##### Cách Quản Lý Quyền và Vai Trò
 
-#### Thêm vai trò mới:
+###### Thêm vai trò mới:
 1. Truy cập vào menu **Security** > **List Roles**.
 2. Nhấn vào nút **+ Role** để thêm vai trò mới.
 3. Đặt tên cho vai trò và gán các quyền tương ứng.
 
-#### Chỉnh sửa quyền của vai trò:
+###### Chỉnh sửa quyền của vai trò:
 1. Truy cập vào menu **Security** > **List Roles**.
 2. Chọn vai trò bạn muốn chỉnh sửa.
 3. Thêm hoặc xóa các quyền từ danh sách quyền.
 
-#### Gán vai trò cho người dùng:
+###### Gán vai trò cho người dùng:
 1. Truy cập vào menu **Security** > **List Users**.
 2. Chọn người dùng bạn muốn chỉnh sửa.
 3. Trong phần **Roles**, chọn các vai trò bạn muốn gán cho người dùng đó.
