@@ -96,7 +96,7 @@ Kiểm tra kết nối:
 
 9. **Tạo user và phân quyền**: Trong Apache Superset, quyền (permissions) được quản lý thông qua các vai trò (roles). Mỗi vai trò có thể có một hoặc nhiều quyền, và người dùng có thể được gán một hoặc nhiều vai trò. Dưới đây là một số vai trò và quyền chính trong Superset:
 
-##### Các Vai Trò Chính
+Các Vai Trò Chính
 
 ###### Admin:
 - Quản lý toàn bộ hệ thống Superset.
@@ -113,7 +113,7 @@ Kiểm tra kết nối:
 ###### Public:
 - Quyền rất hạn chế, chủ yếu cho phép xem một số nội dung công khai mà không cần đăng nhập.
 
-##### Các Quyền Cơ Bản
+Các Quyền Cơ Bản
 - **Can Dashboard on Superset**: Quyền truy cập vào các dashboard.
 - **Can Slice on Superset**: Quyền truy cập vào các biểu đồ (charts).
 - **Can Explore on Superset**: Quyền truy cập vào giao diện khám phá dữ liệu.
@@ -125,7 +125,7 @@ Kiểm tra kết nối:
 - **Datasource Access on [datasource]**: Quyền truy cập vào một nguồn dữ liệu cụ thể.
 - **Schema Access on [schema]**: Quyền truy cập vào một schema cụ thể trong cơ sở dữ liệu.
 
-##### Cách Quản Lý Quyền và Vai Trò
+Cách Quản Lý Quyền và Vai Trò
 
 ###### Thêm vai trò mới:
 1. Truy cập vào menu **Security** > **List Roles**.
