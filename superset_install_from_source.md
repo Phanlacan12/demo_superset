@@ -10,12 +10,12 @@
 **Cài đặt một số thư viện dựa trên OS**
 * Debian và Ubuntu
     ```shell
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev
+        sudo apt-get install build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev
     ```
     
 * Ubuntu 20.04+
     ```shell
-sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev
+        sudo apt-get install build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev default-libmysqlclient-dev
     ```
     
 * Fedora và RHEL-derivative Linux distributions
