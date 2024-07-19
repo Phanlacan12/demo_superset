@@ -34,14 +34,12 @@ trong một số phiên bản của Fedora, chúng ta cần cài đặt qua `dnf
 ### 2. Cài đặt môi trường cho Superset
 
 **2.1. Thực hiện clone repo Superset:**
-
     ```shell
     git clone --depth=1  https://github.com/apache/superset.git
     cd superset
     ```
 
 **2.2. Tạo và kích hoạt môi trường cho Superset:**
-
     ```shell
     conda create -n superset python=3.9
     conda activate superset
@@ -51,13 +49,11 @@ trong một số phiên bản của Fedora, chúng ta cần cài đặt qua `dnf
 
 **3.1. Thêm SECRET_KEY** 
 * Superset yêu cầu phải có SECRET_KEY để có thể start-up. Chúng ta có thể sinh SECRET_KEY bằng lệnh:
-  
     ```shell
     openssl rand -base64 42
     ```
     
 * Sau đó, tạo file superset_config.py trong folder superset để lưu key:
-
     ```shell
     nano superset_config.py
     ```
@@ -73,7 +69,6 @@ trong một số phiên bản của Fedora, chúng ta cần cài đặt qua `dnf
     export SUPERSET_CONFIG_PATH=path/to/superset_config.py
     ```
 Ví dụ: 
-
     ```shell
     export SUPERSET_CONFIG_PATH=/home/plant27/Documents/VNPT/MyTV_dashboard/demo_superset3/superset/superset_config.py
     ```
