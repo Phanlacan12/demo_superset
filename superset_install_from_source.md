@@ -36,6 +36,7 @@ trong một số phiên bản của Fedora, chúng ta cần cài đặt qua `dnf
 **2.1. Thực hiện clone repo Superset:**
     ```shell
     git clone --depth=1  https://github.com/apache/superset.git
+    
     cd superset
     ```
 
