@@ -1,4 +1,4 @@
-# # Cài đặt Apache Superset từ source
+# Cài đặt Apache Superset từ source
 
 ### 1. System Requirements
 
