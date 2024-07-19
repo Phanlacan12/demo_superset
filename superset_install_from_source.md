@@ -68,13 +68,11 @@ SECRET_KEY = '8liZR0KzsGx4xaNoBXhHNDo+S5iF1zgL1Li1zqFCxeDm2a31Q/Xhz9Yc'
     
 * Sau đó thực hiện thêm file superset_config.py trên vào config_path bằng câu lệnh:
 ```shell
-# superset_config.py
 export SUPERSET_CONFIG_PATH=path/to/superset_config.py
 ```
 Ví dụ: 
 
 ```shell
-# superset_config.py
 export SUPERSET_CONFIG_PATH=/home/plant27/Documents/VNPT/MyTV_dashboard/demo_superset3/superset/superset_config.py
 ```
 
